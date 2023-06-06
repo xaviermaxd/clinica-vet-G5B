@@ -5,27 +5,27 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-public class Vets {
+public class Vet {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	@Column(name="first_name")
 	private String name;
-	@Column(name="last")
+	@Column(name="last_name")
 	private String lastname;
 	
-	public Vets() {
+	public Vet() {
 		super();
 	}
 
-	public Vets(Integer id, String name, String lastname) {
+	public Vet(Integer id, String name, String lastname) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.lastname = lastname;
 	}
 	
-	public Vets(String name, String lastname) {
+	public Vet(String name, String lastname) {
 		super();
 		this.name = name;
 		this.lastname = lastname;
