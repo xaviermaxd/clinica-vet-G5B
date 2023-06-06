@@ -22,14 +22,11 @@ import com.tecsup.petclinic.repositories.PetRepository;
 @Slf4j
 public class PetServiceImpl implements PetService {
 	
-	private static final Logger log = LogManager.getLogger(PetServiceImpl.class);
-	
 	PetRepository petRepository;
 
 	public PetServiceImpl (PetRepository petRepository) {
 		this. petRepository = petRepository;
 	}
-
 
 	/**
 	 * 
