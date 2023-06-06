@@ -11,7 +11,7 @@ public class Vets {
 	private Integer id;
 	@Column(name="first_name")
 	private String name;
-	@Column(name="last_name")
+	@Column(name="last")
 	private String lastname;
 	
 	public Vets() {
